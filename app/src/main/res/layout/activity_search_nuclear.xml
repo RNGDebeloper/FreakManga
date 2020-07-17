@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".SearchNuclearActivity">
+
+    <WebView
+        android:id="@+id/webViewTest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/edit_text_nuclear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:hint="Isi kode terbaikmu!"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/button_nuclear_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:text="Klik!!" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyler_images"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_list_manga_content"
+        tools:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/linear_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/image_error"
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:layout_marginBottom="20dp"
+            tools:src="@raw/aquacry" />
+
+        <TextView
+            android:id="@+id/text_view_error_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Oops, please input your code correctly"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
