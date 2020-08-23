@@ -1,6 +1,6 @@
-package com.otongsoetardjoe.freakmangabrandnew.fragments.new_release_mvp;
+package com.otongsoetardjoe.freakmangabrandnew.fragments.manga_fragments.new_release_mvp;
 
-import com.otongsoetardjoe.freakmangabrandnew.HenModel;
+import com.otongsoetardjoe.freakmangabrandnew.models.HenModel;
 
 import java.util.List;
 

@@ -1,13 +1,11 @@
-package com.otongsoetardjoe.freakmangabrandnew.fragments.new_release_mvp;
+package com.otongsoetardjoe.freakmangabrandnew.fragments.manga_fragments.new_release_mvp;
 
 import android.util.Log;
 
-import com.otongsoetardjoe.freakmangabrandnew.HenModel;
-import com.otongsoetardjoe.freakmangabrandnew.ReadHenInterface;
+import com.otongsoetardjoe.freakmangabrandnew.networks.CloudFlare;
+import com.otongsoetardjoe.freakmangabrandnew.models.HenModel;
+import com.otongsoetardjoe.freakmangabrandnew.activities.search_or_read_mvp.ReadHenInterface;
 import com.otongsoetardjoe.freakmangabrandnew.networks.JsoupConfig;
-import com.zhkrb.cloudflare_scrape_android.Cloudflare;
-
-import org.jsoup.internal.StringUtil;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
@@ -30,12 +28,12 @@ public class NewReleasePresenter {
     }
 
     public void getHenContent(String henUrl, String hitStatus) {
-        Cloudflare cloudflare = new Cloudflare(henUrl);
+        CloudFlare cloudflare = new CloudFlare(henUrl);
         cloudflare.setUser_agent("Mozilla/5.0");
-        cloudflare.getCookies(new Cloudflare.cfCallback() {
+        cloudflare.getCookies(new CloudFlare.cfCallback() {
             @Override
             public void onSuccess(List<HttpCookie> cookieList, boolean hasNewUrl, String newUrl) {
-                Map<String, String> cookies = Cloudflare.List2Map(cookieList);
+                Map<String, String> cookies = CloudFlare.List2Map(cookieList);
                 if (hasNewUrl) {
                     passToJsoup(newUrl, cookies, hitStatus);
                 } else {
@@ -44,7 +42,7 @@ public class NewReleasePresenter {
             }
 
             @Override
-            public void onFail() {
+            public void onFail(String message) {
                 newReleaseInterface.onGetDataFailed();
             }
         });
@@ -52,12 +50,12 @@ public class NewReleasePresenter {
 
     public void getHenImage(String henUrl, String hitStatus) {
         Log.e("URL", henUrl);
-        Cloudflare cloudflare = new Cloudflare(henUrl);
+        CloudFlare cloudflare = new CloudFlare(henUrl);
         cloudflare.setUser_agent("Mozilla/5.0");
-        cloudflare.getCookies(new Cloudflare.cfCallback() {
+        cloudflare.getCookies(new CloudFlare.cfCallback() {
             @Override
             public void onSuccess(List<HttpCookie> cookieList, boolean hasNewUrl, String newUrl) {
-                Map<String, String> cookies = Cloudflare.List2Map(cookieList);
+                Map<String, String> cookies = CloudFlare.List2Map(cookieList);
                 if (hasNewUrl) {
                     passToJsoupImage(newUrl, cookies, hitStatus);
                 } else {
@@ -66,7 +64,7 @@ public class NewReleasePresenter {
             }
 
             @Override
-            public void onFail() {
+            public void onFail(String message) {
                 readHenInterface.onGetDataFailed();
             }
         });
@@ -74,12 +72,12 @@ public class NewReleasePresenter {
 
     public void getHenCafeImage(String henUrl, String hitStatus) {
         Log.e("URL", henUrl);
-        Cloudflare cloudflare = new Cloudflare(henUrl);
+        CloudFlare cloudflare = new CloudFlare(henUrl);
         cloudflare.setUser_agent("Mozilla/5.0");
-        cloudflare.getCookies(new Cloudflare.cfCallback() {
+        cloudflare.getCookies(new CloudFlare.cfCallback() {
             @Override
             public void onSuccess(List<HttpCookie> cookieList, boolean hasNewUrl, String newUrl) {
-                Map<String, String> cookies = Cloudflare.List2Map(cookieList);
+                Map<String, String> cookies = CloudFlare.List2Map(cookieList);
                 if (hasNewUrl) {
                     passToJsoupImage(newUrl, cookies, hitStatus);
                 } else {
@@ -88,7 +86,7 @@ public class NewReleasePresenter {
             }
 
             @Override
-            public void onFail() {
+            public void onFail(String message) {
                 readHenInterface.onGetDataFailed();
             }
         });

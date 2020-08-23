@@ -1,10 +1,11 @@
-package com.otongsoetardjoe.freakmangabrandnew;
+package com.otongsoetardjoe.freakmangabrandnew.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.Menu;
 import android.view.View;
 
 import com.otongsoetardjoe.freakmangabrandnew.databinding.ActivitySplashBinding;
@@ -17,7 +18,7 @@ public class SplashActivity extends AppCompatActivity {
         ActivitySplashBinding splashBinding = ActivitySplashBinding.inflate(getLayoutInflater());
         setContentView(splashBinding.getRoot());
         new Handler().postDelayed(() -> {
-            startActivity(new Intent(SplashActivity.this, MainActivity.class));
+            startActivity(new Intent(SplashActivity.this, MenuActivity.class));
             finish();
         }, 3000);
     }

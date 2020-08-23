@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".SearchNuclearActivity">
+    tools:context=".activities.search_or_read_mvp.SearchNuclearActivity">
 
     <WebView
         android:id="@+id/webViewTest"

@@ -13,15 +13,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
+        <activity android:name=".activities.MenuActivity"></activity>
         <activity
-            android:name=".TryWebViewActivity"
-            android:screenOrientation="userPortrait" />
+            android:name=".activities.TryWebViewActivity"
+            android:screenOrientation="userLandscape"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".SearchNuclearActivity"
+            android:name=".activities.search_or_read_mvp.SearchNuclearActivity"
             android:screenOrientation="userPortrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".activities.SplashActivity"
             android:screenOrientation="userPortrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -31,8 +33,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:label="@string/title_activity_main" />
+        <activity
+            android:name=".activities.MainNekoActivity"
+            android:label="@string/title_activity_main" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

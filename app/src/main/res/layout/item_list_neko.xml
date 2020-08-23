@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_item"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_180sdp"
+    android:layout_marginStart="@dimen/_5sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginEnd="@dimen/_5sdp">
+
+    <ImageView
+        android:id="@+id/image_thumb"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/nekothumbsample" />
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black_with_opacity"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center_vertical"
+        android:maxLines="5"
+        android:padding="@dimen/_3sdp"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_13ssp"
+        app:sizeToFit="true"
+        tools:ignore="RtlCompat"
+        tools:text="[JAV SUB INDO] MIAA-076 As She Was Able To Do For The First Time, She Decided To Practice With Her Childhood Friend And SEX And Creampie Eimi Fukada" />
+</RelativeLayout>

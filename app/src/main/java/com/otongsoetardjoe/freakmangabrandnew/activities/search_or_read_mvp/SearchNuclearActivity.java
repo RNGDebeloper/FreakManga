@@ -1,16 +1,16 @@
-package com.otongsoetardjoe.freakmangabrandnew;
+package com.otongsoetardjoe.freakmangabrandnew.activities.search_or_read_mvp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.View;
 import android.widget.Toast;
 
+import com.otongsoetardjoe.freakmangabrandnew.utils.Const;
+import com.otongsoetardjoe.freakmangabrandnew.adapters.recycler_adapters.RecyclerReadHenAdapter;
 import com.otongsoetardjoe.freakmangabrandnew.databinding.ActivitySearchNuclearBinding;
-import com.otongsoetardjoe.freakmangabrandnew.fragments.new_release_mvp.NewReleaseInterface;
-import com.otongsoetardjoe.freakmangabrandnew.fragments.new_release_mvp.NewReleasePresenter;
+import com.otongsoetardjoe.freakmangabrandnew.fragments.manga_fragments.new_release_mvp.NewReleasePresenter;
 
 import java.util.ArrayList;
 import java.util.List;

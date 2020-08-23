@@ -1,4 +1,4 @@
-package com.otongsoetardjoe.freakmangabrandnew;
+package com.otongsoetardjoe.freakmangabrandnew.adapters.recycler_adapters;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -8,13 +8,10 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.RequestOptions;
+import com.otongsoetardjoe.freakmangabrandnew.R;
 import com.otongsoetardjoe.freakmangabrandnew.databinding.ItemListMangaContentBinding;
 import com.squareup.picasso.Picasso;
 
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.List;
 
 public class RecyclerReadHenAdapter extends RecyclerView.Adapter<RecyclerReadHenAdapter.ViewHolder> {

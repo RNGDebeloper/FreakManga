@@ -1,4 +1,4 @@
-package com.otongsoetardjoe.freakmangabrandnew.fragments;
+package com.otongsoetardjoe.freakmangabrandnew.fragments.manga_fragments.new_release_mvp;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -18,15 +18,12 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.google.gson.Gson;
-import com.otongsoetardjoe.freakmangabrandnew.Const;
-import com.otongsoetardjoe.freakmangabrandnew.EndlessRecyclerViewScrollListener;
-import com.otongsoetardjoe.freakmangabrandnew.HenModel;
 import com.otongsoetardjoe.freakmangabrandnew.R;
-import com.otongsoetardjoe.freakmangabrandnew.RecyclerNewReleasesAdapter;
+import com.otongsoetardjoe.freakmangabrandnew.adapters.recycler_adapters.RecyclerNewReleasesAdapter;
 import com.otongsoetardjoe.freakmangabrandnew.databinding.FragmentNewReleasesBinding;
-import com.otongsoetardjoe.freakmangabrandnew.fragments.new_release_mvp.NewReleaseInterface;
-import com.otongsoetardjoe.freakmangabrandnew.fragments.new_release_mvp.NewReleasePresenter;
+import com.otongsoetardjoe.freakmangabrandnew.models.HenModel;
+import com.otongsoetardjoe.freakmangabrandnew.utils.Const;
+import com.otongsoetardjoe.freakmangabrandnew.utils.EndlessRecyclerViewScrollListener;
 
 import org.jetbrains.annotations.NotNull;
 

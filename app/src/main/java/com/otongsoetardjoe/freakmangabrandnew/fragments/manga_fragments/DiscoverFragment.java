@@ -1,4 +1,4 @@
-package com.otongsoetardjoe.freakmangabrandnew.fragments;
+package com.otongsoetardjoe.freakmangabrandnew.fragments.manga_fragments;
 
 import android.os.Bundle;
 

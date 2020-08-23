@@ -1,4 +1,4 @@
-package com.otongsoetardjoe.freakmangabrandnew;
+package com.otongsoetardjoe.freakmangabrandnew.models;
 
 import lombok.Data;
 

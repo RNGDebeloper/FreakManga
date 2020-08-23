@@ -15,4 +15,13 @@ public class JsoupConfig {
             return null;
         }
     }
+
+    public static Document setInitJsoup(String url) {
+        try {
+            return Jsoup.connect(url).userAgent("Mozilla/5.0").execute().parse();
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
 }

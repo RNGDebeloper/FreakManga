@@ -1,4 +1,4 @@
-package com.otongsoetardjoe.freakmangabrandnew;
+package com.otongsoetardjoe.freakmangabrandnew.activities.search_or_read_mvp;
 
 import java.util.List;
 

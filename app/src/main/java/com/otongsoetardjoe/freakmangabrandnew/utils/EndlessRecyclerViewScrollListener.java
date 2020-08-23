@@ -1,4 +1,4 @@
-package com.otongsoetardjoe.freakmangabrandnew;
+package com.otongsoetardjoe.freakmangabrandnew.utils;
 
 
 import androidx.recyclerview.widget.GridLayoutManager;

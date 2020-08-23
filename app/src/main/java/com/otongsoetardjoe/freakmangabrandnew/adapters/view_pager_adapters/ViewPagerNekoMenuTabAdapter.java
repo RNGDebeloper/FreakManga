@@ -1,18 +1,18 @@
-package com.otongsoetardjoe.freakmangabrandnew;
+package com.otongsoetardjoe.freakmangabrandnew.adapters.view_pager_adapters;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
-import com.otongsoetardjoe.freakmangabrandnew.fragments.DiscoverFragment;
-import com.otongsoetardjoe.freakmangabrandnew.fragments.NewReleasesFragment;
+import com.otongsoetardjoe.freakmangabrandnew.fragments.anime_fragments.*;
+import com.otongsoetardjoe.freakmangabrandnew.fragments.anime_fragments.neko_new_releases_mvp.NekoNewReleasesFragment;
 
 /*
  * Created by Rosinante24 on 2019-05-30.
  */
-public class ViewPagerMangaMenuTabAdapter extends FragmentStatePagerAdapter {
-    public ViewPagerMangaMenuTabAdapter(FragmentManager supportFragmentManager) {
+public class ViewPagerNekoMenuTabAdapter extends FragmentStatePagerAdapter {
+    public ViewPagerNekoMenuTabAdapter(FragmentManager supportFragmentManager) {
         super(supportFragmentManager, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
     }
 
@@ -20,9 +20,9 @@ public class ViewPagerMangaMenuTabAdapter extends FragmentStatePagerAdapter {
     @Override
     public Fragment getItem(int position) {
         if (position == 0) {
-            return new NewReleasesFragment();
+            return new NekoNewReleasesFragment();
         } else if (position == 1) {
-            return new DiscoverFragment();
+            return new NekoDiscoverFragment();
         }
         return null;
     }

@@ -1,15 +1,19 @@
-package com.otongsoetardjoe.freakmangabrandnew;
+package com.otongsoetardjoe.freakmangabrandnew.activities;
 
+import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.os.Bundle;
 
-import com.google.android.material.tabs.TabLayout;
-import com.otongsoetardjoe.freakmangabrandnew.databinding.ActivityMainBinding;
-
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.tabs.TabLayout;
+import com.otongsoetardjoe.freakmangabrandnew.R;
+import com.otongsoetardjoe.freakmangabrandnew.adapters.view_pager_adapters.ViewPagerMangaMenuTabAdapter;
+import com.otongsoetardjoe.freakmangabrandnew.adapters.view_pager_adapters.ViewPagerNekoMenuTabAdapter;
+import com.otongsoetardjoe.freakmangabrandnew.databinding.ActivityMainBinding;
 
-public class MainActivity extends AppCompatActivity {
+
+public class MainNekoActivity extends AppCompatActivity {
     ActivityMainBinding mainBinding;
 
     @Override
@@ -45,13 +49,20 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        startActivity(new Intent(MainNekoActivity.this, MenuActivity.class));
+        finish();
+    }
+
     private void initUI() {
         setTitle("New releases");
         mainBinding.tabHome.addTab(mainBinding.tabHome.newTab().setIcon(getResources().getDrawable(R.drawable.ic_home_white_24dp)));
         mainBinding.tabHome.addTab(mainBinding.tabHome.newTab().setIcon(getResources().getDrawable(R.drawable.ic_view_list_white_24dp)));
         mainBinding.tabHome.setTabIconTint(ColorStateList.valueOf(getResources().getColor(android.R.color.white)));
         mainBinding.viewPagerTabs.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(mainBinding.tabHome));
-        mainBinding.viewPagerTabs.setAdapter(new ViewPagerMangaMenuTabAdapter(getSupportFragmentManager()));
+        mainBinding.viewPagerTabs.setAdapter(new ViewPagerNekoMenuTabAdapter(getSupportFragmentManager()));
     }
 
 }

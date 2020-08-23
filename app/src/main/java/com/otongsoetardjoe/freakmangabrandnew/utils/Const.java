@@ -1,6 +1,14 @@
-package com.otongsoetardjoe.freakmangabrandnew;
+package com.otongsoetardjoe.freakmangabrandnew.utils;
 
 public class Const {
+    /**
+     * Neko URLs
+     **/
+    public static final String BASE_URL_NEKO = "https://nekopoi.care/";
+    public static final String BASE_PAGE_NEKO = "https://nekopoi.care/category/hentai/page/%1$s";
+    /**
+     * Manga URLs
+     **/
     //Global use URLs
     public static final String BASE_URL = "https://nhentai.net";
     public static final String BASE_URL_HENCAFE = "https://hentai.cafe";

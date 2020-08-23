@@ -1,6 +1,6 @@
 package com.otongsoetardjoe.freakmangabrandnew.networks;
 
-import com.otongsoetardjoe.freakmangabrandnew.Const;
+import com.otongsoetardjoe.freakmangabrandnew.utils.Const;
 
 import java.util.concurrent.TimeUnit;
 
