@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
         android:fontFamily="@font/montserrat_bold"
-        android:text="Neko"
+        android:text="Nhen"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="@dimen/_30ssp" />
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:background="@android:color/white"
         android:fontFamily="@font/montserrat_bold"
-        android:text="Nhen"
+        android:text="Neko"
         android:textAlignment="center"
         android:textColor="@color/colorPrimary"
         android:textSize="@dimen/_30ssp" />
