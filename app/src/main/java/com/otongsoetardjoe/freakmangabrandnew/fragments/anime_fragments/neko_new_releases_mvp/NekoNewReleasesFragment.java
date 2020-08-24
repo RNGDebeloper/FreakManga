@@ -6,7 +6,6 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
@@ -17,13 +16,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.bumptech.glide.Glide;
-import com.google.gson.Gson;
 import com.otongsoetardjoe.freakmangabrandnew.R;
 import com.otongsoetardjoe.freakmangabrandnew.adapters.recycler_adapters.RecyclerNekoNewReleasesAdapter;
-import com.otongsoetardjoe.freakmangabrandnew.adapters.recycler_adapters.RecyclerNewReleasesAdapter;
 import com.otongsoetardjoe.freakmangabrandnew.databinding.FragmentNekoNewReleasesBinding;
-import com.otongsoetardjoe.freakmangabrandnew.fragments.manga_fragments.new_release_mvp.NewReleasePresenter;
-import com.otongsoetardjoe.freakmangabrandnew.models.HenModel;
 import com.otongsoetardjoe.freakmangabrandnew.models.NekoModel;
 import com.otongsoetardjoe.freakmangabrandnew.utils.Const;
 import com.otongsoetardjoe.freakmangabrandnew.utils.EndlessRecyclerViewScrollListener;
@@ -79,7 +74,7 @@ public class NekoNewReleasesFragment extends Fragment implements NekoNewReleases
                 this.pageCount--;
             }
         }
-        newReleasePresenter.getNekoContent(String.format(Const.BASE_PAGE_NEKO, pageCount), hitStatus);
+        newReleasePresenter.getNekoContent(String.format(Const.BASE_PAGE_NEKO_HEN, pageCount), hitStatus);
     }
 
     @Override

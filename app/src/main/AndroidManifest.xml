@@ -13,7 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
-        <activity android:name=".activities.MenuActivity"></activity>
+        <activity
+            android:name=".activities.MenuActivity"
+            android:screenOrientation="userPortrait" />
         <activity
             android:name=".activities.TryWebViewActivity"
             android:screenOrientation="userLandscape"

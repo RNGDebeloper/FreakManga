@@ -5,7 +5,8 @@ public class Const {
      * Neko URLs
      **/
     public static final String BASE_URL_NEKO = "https://nekopoi.care/";
-    public static final String BASE_PAGE_NEKO = "https://nekopoi.care/category/hentai/page/%1$s";
+    public static final String BASE_PAGE_NEKO_HEN = "https://nekopoi.care/category/hentai/page/%1$s";
+    public static final String BASE_PAGE_NEKO_JAV = "https://nekopoi.care/category/jav/page/%1$s";
     /**
      * Manga URLs
      **/

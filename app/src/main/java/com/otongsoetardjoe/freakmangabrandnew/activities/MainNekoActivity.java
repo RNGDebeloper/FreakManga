@@ -31,9 +31,9 @@ public class MainNekoActivity extends AppCompatActivity {
             public void onTabSelected(TabLayout.Tab tab) {
                 mainBinding.viewPagerTabs.setCurrentItem(tab.getPosition());
                 if (tab.getPosition() == 0) {
-                    setTitle("New releases");
+                    setTitle("Neko Hen");
                 } else if (tab.getPosition() == 1) {
-                    setTitle("Discover");
+                    setTitle("Neko Jav");
                 }
             }
 
@@ -57,9 +57,9 @@ public class MainNekoActivity extends AppCompatActivity {
     }
 
     private void initUI() {
-        setTitle("New releases");
-        mainBinding.tabHome.addTab(mainBinding.tabHome.newTab().setIcon(getResources().getDrawable(R.drawable.ic_home_white_24dp)));
-        mainBinding.tabHome.addTab(mainBinding.tabHome.newTab().setIcon(getResources().getDrawable(R.drawable.ic_view_list_white_24dp)));
+        setTitle("Neko Hen");
+        mainBinding.tabHome.addTab(mainBinding.tabHome.newTab().setIcon(getResources().getDrawable(R.drawable.catfill)));
+        mainBinding.tabHome.addTab(mainBinding.tabHome.newTab().setIcon(getResources().getDrawable(R.drawable.womanbody)));
         mainBinding.tabHome.setTabIconTint(ColorStateList.valueOf(getResources().getColor(android.R.color.white)));
         mainBinding.viewPagerTabs.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(mainBinding.tabHome));
         mainBinding.viewPagerTabs.setAdapter(new ViewPagerNekoMenuTabAdapter(getSupportFragmentManager()));

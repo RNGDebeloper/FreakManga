@@ -93,8 +93,9 @@ public class TryWebViewActivity extends AppCompatActivity implements NekoWatchIn
         runOnUiThread(() -> {
             progressDialog.dismiss();
             if (nekoURL != null) {
-                String imageURLModify = "<html><body style=\"margin: 0; padding: 0\"><iframe width=\"100%\" height=\"100%\" src=\"" + nekoURL + "\" allowfullscreen=\"allowfullscreen\"></iframe></body></html>";
-                webViewBinding.webView.loadData(imageURLModify, "text/html", "UTF-8");
+//                String imageURLModify = "<html><body style=\"margin: 0; padding: 0\"><iframe width=\"100%\" height=\"100%\" src=\"" + nekoURL + "\" allowfullscreen=\"allowfullscreen\"></iframe></body></html>";
+//                webViewBinding.webView.loadData(imageURLModify, "text/html", "UTF-8");
+                webViewBinding.webView.loadUrl(nekoURL);
             }
         });
     }
