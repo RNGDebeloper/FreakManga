@@ -23,7 +23,6 @@ import com.otongsoetardjoe.freakmangabrandnew.models.NekoModel;
 import com.otongsoetardjoe.freakmangabrandnew.utils.Const;
 import com.otongsoetardjoe.freakmangabrandnew.utils.EndlessRecyclerViewScrollListener;
 
-import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -78,7 +77,7 @@ public class NekoNewReleasesFragment extends Fragment implements NekoNewReleases
     }
 
     @Override
-    public View onCreateView(@NotNull LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         mBinding = FragmentNekoNewReleasesBinding.inflate(inflater, container, false);

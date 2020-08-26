@@ -25,7 +25,6 @@ import com.otongsoetardjoe.freakmangabrandnew.models.HenModel;
 import com.otongsoetardjoe.freakmangabrandnew.utils.Const;
 import com.otongsoetardjoe.freakmangabrandnew.utils.EndlessRecyclerViewScrollListener;
 
-import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -71,7 +70,7 @@ public class NewReleasesFragment extends Fragment implements NewReleaseInterface
     }
 
     @Override
-    public View onCreateView(@NotNull LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         newReleasesBinding = FragmentNewReleasesBinding.inflate(inflater, container, false);
